@@ -9,7 +9,8 @@ L.Routing.control({
         L.latLng(45.487851, -75.50122),
         L.latLng(45.587851, -75.60122)
     ],
-    routeWhileDragging: true
+    routeWhileDragging: true,
+    geocoder: L.Control.Geocoder.nominatim()
 }).addTo(map);
 
 var stationMarkerOptions = {
