@@ -3,6 +3,6 @@
         { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-75.70122, 45.487851]},
             "properties" : { "voltage" : 240 }
-        },
+        }
     ]
 }
