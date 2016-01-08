@@ -12,8 +12,8 @@ L.Routing.control({
             serviceUrl:  'http://router.project-osrm.org/viaroute'
     }),
     waypoints: [
-        L.latLng(45.487851, -75.50122),
-        L.latLng(45.587851, -75.60122)
+        L.latLng(45.20235, -72.74492),
+        L.latLng(45.20222, -72.74103)
     ],
     routeWhileDragging: true,
     geocoder: L.Control.Geocoder.nominatim()
@@ -43,5 +43,7 @@ L.geoJson.ajax('stations-ce.json', {
         return L.marker(latlng, stationMarkerOptions);
     }
 }).addTo(map);
+
+L.control.mousePosition().addTo(map);
 
 
